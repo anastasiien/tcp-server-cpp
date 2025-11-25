@@ -98,6 +98,7 @@ int main() {
     server_addr.sin_port = htons(PORT);
 
     if (inet_pton(AF_INET, SERVER_IP, &server_addr.sin_addr) <= 0) {
+        perror("inet_pton");
         close(sock_fd); 
         return 1;
     }
