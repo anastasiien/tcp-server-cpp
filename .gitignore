@@ -1,0 +1,9 @@
+build/
+output/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+*.log
+.DS_Store
